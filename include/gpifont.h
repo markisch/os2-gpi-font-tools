@@ -86,6 +86,30 @@
 #define FOCA_SELECTION_CHINA        0x4000
 #define FOCA_SELECTION_KOREA        0x8000
 
+/*
+ */
+#ifndef FM_SEL_ITALIC
+#define FM_SEL_ITALIC               0x0001
+#define FM_SEL_UNDERSCORE           0x0002
+#define FM_SEL_NEGATIVE             0x0004
+#define FM_SEL_OUTLINE              0x0008
+#define FM_SEL_STRIKEOUT            0x0010
+#define FM_SEL_BOLD                 0x0020
+#define FM_SEL_ISO9241_TESTED       0x0040
+#endif
+#ifndef FM_TYPE_FIXED
+#define FM_TYPE_FIXED               0x0001
+#define FM_TYPE_LICENSED            0x0002
+#define FM_TYPE_KERNING             0x0004
+#define FM_TYPE_DBCS                0x0010
+#define FM_TYPE_MBCS                0x0018
+#define FM_TYPE_UNICODE             0x0040
+#define FM_TYPE_64K                 0x8000
+#define FM_TYPE_ATOMS               0x4000
+#define FM_TYPE_FAMTRUNC            0x2000
+#define FM_TYPE_FACETRUNC           0x1000
+#endif
+
 /* Error definitions.
  */
 #define OS2FNT_ERR_BASE     0x0F00
